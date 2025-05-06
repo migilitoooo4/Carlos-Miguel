@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+  }
+  
+  .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  }
+  
+  
+  .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  }
+  
+  .App-link {
+  color: #61dafb;
+  }
+  
+  .split-text {
+  font-size: 100px;
+  font-weight: 700;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: inline-block;
+  opacity: 0;
+  transform: translate3d(0, 50px, 0);
+  animation: fadeInUp 0.5s ease-out 150ms forwards;
+  padding-top: 5in;
+  }
+  
+  @keyframes fadeInUp {
+  to {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  }
+  }
+  
+  body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(130% 130% at 50% 0%, #020617 50% , #2b97b8);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  }
+  
+  @media (max-width: 768px) {
+  .nav-container {
+  top: 10px !important;
+  right: 10px !important;
+  }
+  
+  .logo {
+  height: 40px !important;
+  left: 10px !important;
+  }
+  
+  .name-text {
+  top: 200px !important;
+  padding: 0 10px;
+  }
+  }
